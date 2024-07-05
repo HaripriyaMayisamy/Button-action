@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> basic button operations</title>
+        <style>
+          
+            #demo{
+                background-color: rgb(160, 226, 243);
+                height: 200px;
+                width: 250px;
+                padding-left: 150px;
+                padding-top: 150px;
+                padding-bottom: 150px;
+                padding-right: 150px;
+                border: 250px;
+                margin-left: 400px;
+            }
+            #demo h1{
+                font-family: 'Times New Roman', Times, serif;
+            }
+            
+        </style>
+    </head>
+    <body> 
+        <h2 align="center">COLOR CHANGING</h2>
+        <div id="demo" >
+
+            Name:<br><input type="text" name="name"><br><br>
+            Age:<br><input type="number" name="nym"><br><br>
+            Phone no:<br><input type="text" name="no"><br><br>
+            Please enter the color:
+            <select>
+                <option>select the color</option>
+                <option>Yellow</option>
+                <option>Gray</option>
+                <option>Green</option>
+            </select><br><br>
+           <button onclick="background(this)">click me!</button>
+           <input type="button" class="button" value="Yellow" onclick="yellow()">
+           <input type="button" class="button" value="Gray" onclick="gray()">
+           <input type="button" class="button" value="Green" onclick="green()">
+           <script>
+              function background(event)
+              {
+                event.style.backgroundColor="red";
+
+              }
+              function yellow(){
+                document.bgColor="yellow";
+              }
+              function gray(){
+                document.bgColor="gray";
+              }
+              function green(){
+                document.bgColor="lightgreen";
+              }
+           </script>
+        </div>
+    </body>
+</html>
